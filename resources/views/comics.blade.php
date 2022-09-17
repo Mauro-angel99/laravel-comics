@@ -1,10 +1,16 @@
-<main>
+@extends('layouts.main')
+
+@section('main-content')
+
+<section>
     <div class="content">
         <div class="container">
             <div class="row comics">
                 @foreach ($comics as $comic)
                 <div class="card">
-                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    <figure>
+                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                    </figure>
                     <span>{{ $comic['title'] }}</span>
                 </div>
                 @endforeach
@@ -37,4 +43,7 @@
             </div>
         </div>
     </div>
-</main>
+</section>
+
+
+@endsection

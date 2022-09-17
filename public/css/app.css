@@ -124,14 +124,31 @@ h3 {
   color: white;
   background-color: black;
 }
+.content .comics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.content .comics .card {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.content .comics .card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 5px;
+}
 
 .container {
   width: 1100px;
   margin: 0 auto;
-}
-
-h2 {
-  line-height: 150px;
 }
 
 .options {
@@ -154,4 +171,12 @@ h2 {
 .option-text {
   font-size: 12px;
   margin-left: 5px;
+}
+
+.jumbo {
+  height: 400px;
+  background-image: url("../images/jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: top;
 }

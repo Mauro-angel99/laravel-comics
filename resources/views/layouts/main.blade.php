@@ -11,7 +11,10 @@
 
 <body>
     @include('includes.header')
-    @include('main')
+    @include('includes.jumbo')
+    <main>
+        @yield('main-content')
+    </main>
     @include('includes.footer')
     @include('includes.bottomFooter')
 </body>
